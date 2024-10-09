@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: white;
+}
+
+#gameCanvas {
+    border: 1px solid #fff;
+}
+
+#gameOver {
+    margin-top: 20px;
+    color: red;
+    font-size: 24px;
+}

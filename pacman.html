@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="pacman.css">
+</head>
+<body>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background: gray;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+    
+    <canvas id="gameCanvas" width="400" height="400"></canvas>    
+    <div id="gameOver" style="display:none;">Game Over! <button onclick="restartGame()">Restart</button></div>
+    
+        <div class="controls">
+    <button class="button" id="up">↑</button>
+    <button class="button" id="left">←</button>
+    <button class="button" id="down">↓</button>
+    <button class="button" id="right">→</button>
+</div>
+    
+    <script src="pacman.js"></script>
+</body>
+</html>
